@@ -25,6 +25,3 @@ By deploying the version-manager yaml file probes/components on client side will
 ```
 kubectl apply -f https://raw.githubusercontent.com/IBM/t8c-client-operator/refs/heads/main/deploy/versionmanager.yaml -n $namespace
 ```
-
-curl -L https://github.com/operator-framework/operator-lifecycle-manager/releases/download/v0.23.1/install.sh -o install.sh
-chmod +x install.sh
