@@ -1,0 +1,4 @@
+apiVersion: clients.turbonomic.ibm.com/v1alpha1
+kind: VersionManager
+metadata:
+  name: versionmanager-release

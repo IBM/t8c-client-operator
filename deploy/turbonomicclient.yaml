@@ -1,0 +1,92 @@
+apiVersion: clients.turbonomic.ibm.com/v1alpha1
+kind: TurbonomicClient
+metadata:
+  name: turbonomicclient-release
+spec:
+  global:
+    version: __VERSION__
+  probes:
+    actionScript:
+      enabled: false
+    actionStreamKafka:
+      enabled: false
+    appDynamics:
+      enabled: false
+    bareMetal:
+      enabled: false
+    compellent:
+      enabled: false
+    datadog:
+      enabled: false
+    dynatrace:
+      enabled: false
+    flexera:
+      enabled: false
+    hds:
+      enabled: false
+    horizon:
+      enabled: false
+    hpe3par:
+      enabled: false
+    hyperFlex:
+      enabled: false
+    hyperV:
+      enabled: false
+    ibmStorageFlashSystem:
+      enabled: false
+    instana:
+      enabled: false
+    jBoss:
+      enabled: false
+    jvm:
+      enabled: false
+    mssql:
+      enabled: false
+    mysql:
+      enabled: false
+    netApp:
+      enabled: false
+    newRelic:
+      enabled: false
+    nutanix:
+      enabled: false
+    oneView:
+      enabled: false
+    oracle:
+      enabled: false
+    powerVM:
+      enabled: false
+    pure:
+      enabled: false
+    scaleIO:
+      enabled: false
+    serviceNow:
+      enabled: false
+    snmp:
+      enabled: false
+    terraform:
+      enabled: false
+    tomcat:
+      enabled: false
+    ucs:
+      enabled: false
+    ucsDirector:
+      enabled: false
+    vCenter:
+      enabled: false
+    vmax:
+      enabled: false
+    vmm:
+      enabled: false
+    vplex:
+      enabled: false
+    webLogic:
+      enabled: false
+    webSphere:
+      enabled: false
+    wmi:
+      enabled: false
+    xen:
+      enabled: false
+    xtremIO:
+      enabled: false
