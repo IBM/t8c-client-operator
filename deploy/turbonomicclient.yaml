@@ -39,7 +39,7 @@ spec:
     mysql:
       enabled: false
     netApp:
-      enabled: true
+      enabled: false
     newRelic:
       enabled: false
     nutanix:
@@ -51,7 +51,7 @@ spec:
     powerVM:
       enabled: false
     pure:
-      enabled: true
+      enabled: false
     scaleIO:
       enabled: false
     serviceNow:
@@ -63,9 +63,9 @@ spec:
     tomcat:
       enabled: false
     ucs:
-      enabled: true
+      enabled: false
     vCenter:
-      enabled: true
+      enabled: false
     vmax:
       enabled: false
     vmm:
