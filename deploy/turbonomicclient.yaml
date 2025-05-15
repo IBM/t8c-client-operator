@@ -12,8 +12,6 @@ spec:
       enabled: false
     appDynamics:
       enabled: false
-    bareMetal:
-      enabled: false
     compellent:
       enabled: false
     datadog:
@@ -23,8 +21,6 @@ spec:
     flexera:
       enabled: false
     hds:
-      enabled: false
-    horizon:
       enabled: false
     hpe3par:
       enabled: false
@@ -36,8 +32,6 @@ spec:
       enabled: false
     instana:
       enabled: false
-    jBoss:
-      enabled: false
     jvm:
       enabled: false
     mssql:
@@ -45,7 +39,7 @@ spec:
     mysql:
       enabled: false
     netApp:
-      enabled: false
+      enabled: true
     newRelic:
       enabled: false
     nutanix:
@@ -57,7 +51,7 @@ spec:
     powerVM:
       enabled: false
     pure:
-      enabled: false
+      enabled: true
     scaleIO:
       enabled: false
     serviceNow:
@@ -69,11 +63,9 @@ spec:
     tomcat:
       enabled: false
     ucs:
-      enabled: false
-    ucsDirector:
-      enabled: false
+      enabled: true
     vCenter:
-      enabled: false
+      enabled: true
     vmax:
       enabled: false
     vmm:
@@ -85,8 +77,6 @@ spec:
     webSphere:
       enabled: false
     wmi:
-      enabled: false
-    xen:
       enabled: false
     xtremIO:
       enabled: false
