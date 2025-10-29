@@ -13,7 +13,7 @@ sed "s/__NAMESPACE__/${namespace}/g"  operator_bundle.yaml | kubectl apply -n $n
 Create or modify the Turbonomic Secure Connect custom resource, to deploy an instance of Turbonomic Secure Connect within the namespace.
 
 ```
-export version=8.15.3
+export version=8.17.6
 curl -L https://raw.githubusercontent.com/IBM/t8c-client-operator/refs/heads/main/deploy/turbonomicclient.yaml -o turbonomicclient.yaml
 sed "s/__VERSION__/${version}/g"  turbonomicclient.yaml  | kubectl apply -n $namespace -f -
 ```

@@ -22,6 +22,8 @@ spec:
       enabled: false
     hds:
       enabled: false
+    horizon:
+      enabled: false
     hpe3par:
       enabled: false
     hyperFlex:
@@ -39,7 +41,7 @@ spec:
     mysql:
       enabled: false
     netApp:
-      enabled: false
+      enabled: true
     newRelic:
       enabled: false
     nutanix:
