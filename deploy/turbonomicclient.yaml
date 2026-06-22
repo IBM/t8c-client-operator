@@ -14,6 +14,8 @@ spec:
       enabled: false
     compellent:
       enabled: false
+    databricksWorkspace:
+      enabled: false
     datadog:
       enabled: false
     dynatrace:
@@ -71,8 +73,6 @@ spec:
     vmax:
       enabled: false
     vmm:
-      enabled: false
-    vplex:
       enabled: false
     webLogic:
       enabled: false
