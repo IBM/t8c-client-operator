@@ -12,9 +12,9 @@ spec:
       enabled: false
     appDynamics:
       enabled: false
-    azure:
-      enabled: false
     aws:
+      enabled: false
+    azure:
       enabled: false
     compellent:
       enabled: false
@@ -57,7 +57,7 @@ spec:
     powerVM:
       enabled: false
     pure:
-      enabled: false
+      enabled: true
     scaleIO:
       enabled: false
     serviceNow:
@@ -69,9 +69,9 @@ spec:
     tomcat:
       enabled: false
     ucs:
-      enabled: false
+      enabled: true
     vCenter:
-      enabled: false
+      enabled: true
     vmax:
       enabled: false
     vmm:
