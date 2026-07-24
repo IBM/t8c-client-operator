@@ -12,6 +12,10 @@ spec:
       enabled: false
     appDynamics:
       enabled: false
+    azure:
+      enabled: false
+    aws:
+      enabled: false
     compellent:
       enabled: false
     databricksWorkspace:
@@ -23,8 +27,6 @@ spec:
     flexera:
       enabled: false
     hds:
-      enabled: false
-    horizon:
       enabled: false
     hpe3par:
       enabled: false
