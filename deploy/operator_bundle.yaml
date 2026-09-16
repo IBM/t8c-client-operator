@@ -133,6 +133,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -173,6 +177,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -213,6 +221,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -254,6 +266,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -297,6 +313,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -337,6 +357,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -381,6 +405,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -421,6 +449,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -461,6 +493,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -505,6 +541,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -529,6 +569,50 @@ spec:
                             type: object
                         type: object
                       cost:
+                        properties:
+                          enabled:
+                            type: boolean
+                          image:
+                            properties:
+                              name:
+                                type: string
+                              registry:
+                                type: string
+                              tag:
+                                type: string
+                            type: object
+                          imagePullPolicy:
+                            type: string
+                          javaComponentOptions:
+                            type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
+                          replicaCount:
+                            format: int32
+                            type: integer
+                          resources:
+                            properties:
+                              limits:
+                                additionalProperties:
+                                  anyOf:
+                                  - type: integer
+                                  - type: string
+                                  pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                                  x-kubernetes-int-or-string: true
+                                type: object
+                              requests:
+                                additionalProperties:
+                                  anyOf:
+                                  - type: integer
+                                  - type: string
+                                  pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                                  x-kubernetes-int-or-string: true
+                                type: object
+                            type: object
+                        type: object
+                      devOps:
                         properties:
                           enabled:
                             type: boolean
@@ -585,6 +669,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -629,6 +717,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -669,6 +761,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -709,6 +805,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -749,6 +849,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -789,6 +893,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -831,6 +939,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -871,6 +983,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -911,6 +1027,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -951,6 +1071,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -991,6 +1115,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1015,6 +1143,90 @@ spec:
                         type: object
                     type: object
                   flexera:
+                    properties:
+                      enabled:
+                        type: boolean
+                      image:
+                        properties:
+                          name:
+                            type: string
+                          registry:
+                            type: string
+                          tag:
+                            type: string
+                        type: object
+                      imagePullPolicy:
+                        type: string
+                      javaComponentOptions:
+                        type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
+                      replicaCount:
+                        format: int32
+                        type: integer
+                      resources:
+                        properties:
+                          limits:
+                            additionalProperties:
+                              anyOf:
+                              - type: integer
+                              - type: string
+                              pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                              x-kubernetes-int-or-string: true
+                            type: object
+                          requests:
+                            additionalProperties:
+                              anyOf:
+                              - type: integer
+                              - type: string
+                              pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                              x-kubernetes-int-or-string: true
+                            type: object
+                        type: object
+                    type: object
+                  gitHub:
+                    properties:
+                      enabled:
+                        type: boolean
+                      image:
+                        properties:
+                          name:
+                            type: string
+                          registry:
+                            type: string
+                          tag:
+                            type: string
+                        type: object
+                      imagePullPolicy:
+                        type: string
+                      javaComponentOptions:
+                        type: string
+                      replicaCount:
+                        format: int32
+                        type: integer
+                      resources:
+                        properties:
+                          limits:
+                            additionalProperties:
+                              anyOf:
+                              - type: integer
+                              - type: string
+                              pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                              x-kubernetes-int-or-string: true
+                            type: object
+                          requests:
+                            additionalProperties:
+                              anyOf:
+                              - type: integer
+                              - type: string
+                              pattern: ^(\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))(([KMGTPE]i)|[numkMGTPE]|([eE](\+|-)?(([0-9]+(\.[0-9]*)?)|(\.[0-9]+))))?$
+                              x-kubernetes-int-or-string: true
+                            type: object
+                        type: object
+                    type: object
+                  gitLab:
                     properties:
                       enabled:
                         type: boolean
@@ -1071,6 +1283,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1112,6 +1328,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1152,6 +1372,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1192,6 +1416,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1232,6 +1460,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1272,6 +1504,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1312,6 +1548,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1353,6 +1593,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1393,6 +1637,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1433,6 +1681,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1473,6 +1725,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1513,6 +1769,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1553,6 +1813,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1593,6 +1857,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1633,6 +1901,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1673,6 +1945,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1713,6 +1989,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1753,6 +2033,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1793,6 +2077,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1833,6 +2121,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1873,6 +2165,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1914,6 +2210,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1954,6 +2254,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1994,6 +2298,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2034,6 +2342,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2075,6 +2387,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2117,6 +2433,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -2155,6 +2475,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -2196,6 +2520,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2236,6 +2564,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2277,6 +2609,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2317,6 +2653,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2357,6 +2697,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2397,6 +2741,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2437,6 +2785,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2478,6 +2830,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -2518,6 +2874,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -3205,7 +3565,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: icr.io/cpopen/t8c-client-operator:1.7.1-SNAPSHOT
+        image: icr.io/cpopen/t8c-client-operator:1.7.3-SNAPSHOT
         livenessProbe:
           httpGet:
             path: /healthz

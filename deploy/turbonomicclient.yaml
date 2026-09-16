@@ -26,6 +26,10 @@ spec:
       enabled: false
     flexera:
       enabled: false
+    gitHub:
+      enabled: false
+    gitLab:
+      enabled: false
     hds:
       enabled: false
     hpe3par:
