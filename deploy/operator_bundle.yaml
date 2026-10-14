@@ -46,6 +46,14 @@ spec:
           spec:
             description: TurbonomicClientSpec defines the desired state of TurbonomicClient
             properties:
+              additionalEnv:
+                additionalProperties:
+                  additionalProperties:
+                    type: string
+                  type: object
+                description: AdditionalEnv defines custom environment variables to
+                  inject into probe deployments keyed by probe name (e.g. mediation-azurebilling)
+                type: object
               global:
                 description: Global defines the global state of TurbonomicClient
                 properties:
@@ -629,6 +637,10 @@ spec:
                             type: string
                           javaComponentOptions:
                             type: string
+                          labels:
+                            additionalProperties:
+                              type: string
+                            type: object
                           replicaCount:
                             format: int32
                             type: integer
@@ -1203,6 +1215,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -1243,6 +1259,10 @@ spec:
                         type: string
                       javaComponentOptions:
                         type: string
+                      labels:
+                        additionalProperties:
+                          type: string
+                        type: object
                       replicaCount:
                         format: int32
                         type: integer
@@ -3565,7 +3585,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.namespace
-        image: icr.io/cpopen/t8c-client-operator:1.7.3-SNAPSHOT
+        image: icr.io/cpopen/t8c-client-operator:1.7.4-SNAPSHOT
         livenessProbe:
           httpGet:
             path: /healthz
